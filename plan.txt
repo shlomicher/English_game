@@ -1,0 +1,50 @@
+
+
+English Game
+
+game that will allow user to add pairs of english-hebrew words
+and then let user play and test his knowledge.
+
+
+class User:
+    userId
+    userState: (none, MainState,
+      WaitingForHebrewEnglishPairState,
+      AskingIfWantToAddMoreWordsState,
+      WaitingForUsersAnswerState
+    )
+
+class MainState:
+
+Class WaitingForHebrewEnglishPairState:
+
+Class AskingIfWantToAddMoreWordsState:
+
+Class WaitingForUsersAnswerState:
+    currentQuestion: Question
+
+
+class Pair:
+    englishWord: str
+    hebrewWord: str
+
+class Question:
+    englishWord: str
+    hebrewWord: str
+    options: [str, str, str, str]
+
+
+its will be a text game that will have several steps, or states.
+
+0. None - say hello and ask user to choose what he want to do. play game or add words. and set state to main
+
+1. Main-WaitingForUserChoice -
+
+2. AddingWord-waitingForHebrewEnglishPair (with , between them)
+
+3. AddingWord-askIfWantToAddMoreWords
+
+4. PlayGame-waitingForUsersAnswer
+
+
+
