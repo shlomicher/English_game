@@ -1,4 +1,4 @@
-#originalnw
+#original
 import json
 import random
 
