@@ -1,4 +1,3 @@
-# write classes
 import dataclasses
 import json
 import random
@@ -75,7 +74,7 @@ class EnglishGame:
     #
 
     @staticmethod
-    def get_instance():
+    def load():
         try:
             return EnglishGame.from_json(json.load(open('data.json', 'r')))
         except Exception as e:
@@ -178,5 +177,5 @@ class EnglishGame:
 
 
 if __name__ == '__main__':
-    game = (EnglishGame.get_instance())
+    game = (EnglishGame.load())
     game.run()
